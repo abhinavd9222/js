@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pro{
+            text-align: center;
+            margin-top: 15vh;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 25vw;
+        }
+   .bb{
+    background-color: brown;
+    width: 3vw;
+    margin-top: 50vh;
+    border-radius: 100%;
+    
+   }
+   .res{
+    background-color: aqua;
+    margin-left: 40vw;
+    width: 5vw;
+    border-radius: 10%;
+    margin-top: 30px;
+   }
+    </style>
+</head>
+<body>
+   <div class="pro">
+    <div><button class="bb" id="minus"onclick="zoomout()">-</button></div>
+    <img src="https://cdn.pixabay.com/photo/2023/08/18/15/02/dog-8198719_640.jpg" id="img" alt="">
+    <div ><button class="bb"  id="plus"onclick= "zoomin()">+</button></div>
+   </div> 
+   <button class="res"  id="btn" onclick="reset()">reset</button>
+<script>
+let size = 5;
+let image = document.getElementById("img");
+
+function zoomout() {
+    size =size -3;
+    console.log(size);
+    image.style.height=size+"px";
+
+     
+}
+function zoomin() {
+    size =size +3;
+    console.log(size);
+    image.style.height=size+"px";
+
+     
+}
+function reset() {
+    size = 300;
+    console.log(size);
+    image.style.height=size+"px";
+
+     
+}
+    
+</script>
+</body>
+</html>

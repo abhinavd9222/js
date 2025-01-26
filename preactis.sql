@@ -1,0 +1,11 @@
+SHOW DATABASES;
+USE school_db;
+
+
+
+ CREATE TABLE students (
+     S_NO INT AUTO_INCREMENT,
+     NAME VARCHAR(100),
+     ROLL_NO int(20),
+     ADDRESS VARCHAR(200)
+     );
